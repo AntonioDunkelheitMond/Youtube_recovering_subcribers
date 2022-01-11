@@ -23,15 +23,15 @@ PASOS:
 
 4.1º For the next steps it is worth noting that you have to open the browser in one of the three languagues, Spanish, English or Deutsch. If that is not the case, you can go to the second file 2_Subbing_bot_youtube_v14_GITHUB to the line 12, an in the sleep comand put 10 instead of 1, this will give you 10 seconds, so when it runs, you will have to change the langugue of the youtube pop up righ on the top right corner of the pop up. This will allow you to run the code correctly. 
 
-5º Open the python file: 2_Subbing_bot_youtube_v14_GITHUB, and run it. Here the program will ask you to provide your gmail account and password so it can do the subbing. In theory there is a limitation of only 75 sub per day by youtube. Altough it is possible to sub to more channels if your run in intervals of a couple hours. Once you have ran the code, several files will have been created:
+5º Open the python file: 2_Subbing_bot_youtube_v14_GITHUB, and run it. Here the program will ask you to provide your gmail account and password so it can do the subbing. In theory there is a limitation of only 75 sub per day by youtube. Altough it is possible to sub to more channels if your run it in intervals of a couple hours. Once you have ran the code, several files will be created:
 
-   file_subs_remaining_temp.txt = incase of the program terminating or failing to end correctly this file will provide a backup of the a current updated list of the remaining                                       subcriptions, this file will be really helpful.
-   Sub_failures.txt = here will be stored the channels that for one reason or another wasnt subbed, or better said, didnt trigger the part of the code in charge of executing                            the action of subbing. Also, the rubbish that wasn't able to clean like wrong names, or very short descriptions will also appear here.
++++file_subs_remaining_temp.txt = incase of the program terminating or failing to end correctly this file will provide a backup of the a current updated list of the remaining                                       subcriptions, this file will be really helpful.
++++Sub_failures.txt = here will be stored the channels that for one reason or another wasnt subbed, or better said, didnt trigger the part of the code in charge of executing                            the action of subbing. Also, the rubbish that wasn't able to clean like wrong names, or very short descriptions will also appear here.
    
-   Kanalliste_nuevo_remaining.txt = This will be saved once the code subbed to 75 channels, in case of early termination it will be blanck or it will have the version of the 
++++Kanalliste_nuevo_remaining.txt = This will be saved once the code subbed to 75 channels, in case of early termination it will be blanck or it will have the version of the 
                                 previuos susccesful run. It is worth noting, that after correctly executing the 75 subs, the Kanalliste_nuevo.txt will be overwritte with this                                   file.
                                 
-   Kanalliste_nuevo.txt = this will be the updated version ready to be used. It should contain the same subs than the Kanalliste_nuevo_remaining.txt once it ran sussccesfully-
++++Kanalliste_nuevo.txt = this will be the updated version ready to be used. It should contain the same subs than the Kanalliste_nuevo_remaining.txt once it ran sussccesfully-
    
    6º Once 75 subcriptions were reach, you need to wait a couple hour so the youtube "counter" allows you to sub to a new batch since currently youtube limit the amount of daily subcriptions. After subbing it will refresh the page so you can see if the subcription wast permitted or you have already surpass the daily limit, in which case it wont show you the "Subcribed gray button".
    
