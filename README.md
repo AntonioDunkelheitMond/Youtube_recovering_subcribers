@@ -33,7 +33,7 @@ PASOS:
                                 
    Kanalliste_nuevo.txt = this will be the updated version ready to be used. It should contain the same subs than the Kanalliste_nuevo_remaining.txt once it ran sussccesfully-
    
-   6º Once 75 subcriptions were reach, you need to way a couple hour so the youtube "counter" allows you to sub to a new batch since currently youtube limit the amount of daily subcriptions. After subbing it will refresh the page so you can see if the subcription wast permitted or you have already surpass the daily limit, in which case it wont show you the "Subcribed gray button".
+   6º Once 75 subcriptions were reach, you need to wait a couple hour so the youtube "counter" allows you to sub to a new batch since currently youtube limit the amount of daily subcriptions. After subbing it will refresh the page so you can see if the subcription wast permitted or you have already surpass the daily limit, in which case it wont show you the "Subcribed gray button".
    
    
    
