@@ -27,7 +27,7 @@ PASOS:
 
 +++file_subs_remaining_temp.txt = incase of the program terminating or failing to end correctly this file will provide a backup of the a current updated list of the remaining                                       subcriptions, this file will be really helpful.
 
-+++Sub_failures.txt = here will be stored the channels that for one reason or another wasnt subbed, or better said, didnt trigger the part of the code in charge of executing                            the action of subbing. Also, the rubbish that wasn't able to clean like wrong names, or very short descriptions will also appear here.
++++Sub_failures.txt = here will be stored the channels that for one reason or another werent subbed to, or better said, these names didnt trigger the part of the code in charge of executing the action of subbing. Also, the rubbish that wasn't able to be cleaned (like wrong names, or very short descriptions) with the first python code will also appear in this file here.
    
 +++Kanalliste_nuevo_remaining.txt = This will be saved once the code subbed to 75 channels, in case of early termination it will be blanck or it will have the version of the 
                                 previuos susccesful run. It is worth noting, that after correctly executing the 75 subs, the Kanalliste_nuevo.txt will be overwritte with this                                   file.
@@ -36,5 +36,6 @@ PASOS:
    
    6º Once 75 subcriptions were reach, you need to wait a couple hour so the youtube "counter" allows you to sub to a new batch since currently youtube limit the amount of daily subcriptions. After subbing it will refresh the page so you can see if the subcription wast permitted or you have already surpass the daily limit, in which case it wont show you the "Subcribed gray button".
    
+   7º You should check the Sub_failures.txt file to manually check and sub to those channels that the bot was not able to sub you to.
    
    
