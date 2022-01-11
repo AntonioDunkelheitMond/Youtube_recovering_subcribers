@@ -26,6 +26,7 @@ PASOS:
 5º Open the python file: 2_Subbing_bot_youtube_v14_GITHUB, and run it. Here the program will ask you to provide your gmail account and password so it can do the subbing. In theory there is a limitation of only 75 sub per day by youtube. Altough it is possible to sub to more channels if your run it in intervals of a couple hours. Once you have ran the code, several files will be created:
 
 +++file_subs_remaining_temp.txt = incase of the program terminating or failing to end correctly this file will provide a backup of the a current updated list of the remaining                                       subcriptions, this file will be really helpful.
+
 +++Sub_failures.txt = here will be stored the channels that for one reason or another wasnt subbed, or better said, didnt trigger the part of the code in charge of executing                            the action of subbing. Also, the rubbish that wasn't able to clean like wrong names, or very short descriptions will also appear here.
    
 +++Kanalliste_nuevo_remaining.txt = This will be saved once the code subbed to 75 channels, in case of early termination it will be blanck or it will have the version of the 
