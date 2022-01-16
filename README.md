@@ -5,7 +5,7 @@ Suscripción automatica de Youtube. Estos dos códigos te permiten recuperar tus
 
 
 DISCLAIMER: Pido disculptas por las posibles faltas de ortografía en ambos idiomas, las prisas no son buen compañero. Intentaré arreglarlos en el futuro.
-            You are going to excuse me from all the possible grammar errors, not only in english but in both languagues, that i hasve made during the writing of this little wiki. I will try to fix them in the future.
+            You are going to have to excuse me from all the possible grammar errors, not only in english but in spanish too, that i hasve made during the writing of this little wiki. I will try to fix them in the future.
             
 DISCLAIMER: The code it is not perfect, and there is a case where if a channel with the exact same name appear in the search results it wont sub to it, this is due to the way in which the code decides if you are subbed or not already to it. Currently i am working on a better way of doing it. Altough it is possible to subs to those manually later on, or opening in a new tab if you are quickly enough, this wont be a problem for the program.
 
