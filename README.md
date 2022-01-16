@@ -8,6 +8,20 @@ DISCLAIMER: The code it is not perfect, and there is a case where if a channel w
 
 PASOS:
 
+0º Para hacer funcionar ambos códigos necesitas que en tu virtual envrioment tener los siguiente paquetes a instalar con pip:
+  pip install undetected-chromedriver
+  pip install selenium
+  pip install pathlib
+1º Accede a tu cuenta y tu lista de suscripciones: https://www.youtube.com/feed/channels
+
+2º Aquí la unica manera que yo he encontrado que me sirve es copìarlo todo, selecciona el nombre de la primera subcrcipcion que te aparezca y empiza con el raton a bajar seleccionando todo (sus descripciones vista etc), todo esto lo quitaremos con el primer código. Que funciona aunque es bastante burdo. 
+
+3º Una vez seleccionadas todas las suscripciones, copia y pegalas a un .txt con el nombre: Kanalliste.txt, ese es el nombre que le dí en su momento y por pereza se ha quedado así, si quieres llamalo como quieras, pero tendrás que modificar el codigo que intentará abrilo para leerlo. o puede utilizar .rglob(*.txt) si deseas que coja el primer archivo aunque esto solo funcionará una vez.
+
+4º Abré el primer archivo, este documento le he quitado los comentarios que puse mientras lo desarrollaba para pdoer ir limpiando y que de esta maneras sea más compacto, aunque basicamente lo que hacer es comprobar la longitud de la linea copiada y si es mas larga que un numero establecido considerado como razonable, alamacenara la linea en un nuevo archivo, de no ser as´ñi la descartá. Esto tiene el problema de que si el nombre d ela sucripción es más largo que ese numero de separación, este sucscripción se perderá, al igualq ue si se da el caso de que la descdipción de la suscripcion es muy corta, esta se almacerá en el archivo finl. Lo cual inrtroduce basura en nuestro .txt ya limpio. Ene l siguiente codigo de alguna manera solvento este problem, aunque cuando hize esta primera parte de este proyecto no conseguí distinguir entre lineas que son el nombre y las que son la descrición y que muy corta, por lo que no se filtran. Por lo que este primer codigo añade basura, y puede hacer perder ciertas suscripciones al final del todo. 
+
+Tras haberlo corrido, se genera un segundo archivo que yo he llamado Kanalliste_nuevo.txt, este te vale y tiene ya la versión "limpia" con las suscripciones. Este primer codigo sólo lo tienes que hacer correr una vez.
+
 0º Make sure you pip install the following packages installed: 
   pip install undetected-chromedriver
   pip install selenium
@@ -34,7 +48,7 @@ PASOS:
                                 
 +++Kanalliste_nuevo.txt = this will be the updated version ready to be used. It should contain the same subs than the Kanalliste_nuevo_remaining.txt once it ran sussccesfully-
    
-   6º Once 75 subcriptions were reach, you need to wait a couple hour so the youtube "counter" allows you to sub to a new batch since currently youtube limit the amount of daily subcriptions. After subbing it will refresh the page so you can see if the subcription wast permitted or you have already surpass the daily limit, in which case it wont show you the "Subcribed gray button".
+   6º Once 75 subcriptions have been reached, you will need to wait for a couple of hours so that the "youtube subcribtions counter" has been reset, and allows you to continue subbing to whole a new batch of subcriptions. Since currently youtube limits the amount of daily subcriptions. After subbing the code will refresh the page so you can check if the subcription was successful.
    
    7º You should check the Sub_failures.txt file to manually check and sub to those channels that the bot was not able to sub you to.
    
