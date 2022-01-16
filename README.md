@@ -3,11 +3,12 @@ Automatic Youtube subcription. These two python files allow a new user to recove
 
 Suscripción automatica de Youtube. Estos dos códigos te permiten recuperar tus subscriptores al cambiar de cuenta de youtube. El primer archivo .py te permiten limpiar y extraer los nombres de tus suscripciones y el segundo hace uso de Selenium para poder automaticamente  buscar y comprobar cada una de los nombres extraidos con el primer archivo y ver si estas suscrito. He implementado el código para tres idomas, Español, Alemán e Ingles. Aunque solo tengo la explicacion en 2 de ellos.
 
-DISCLAIMER: The code it is not perfect, and there is a case where if a channel with the exact same name appear in the search results it wont sub to it, this is due to the way in which the code decides if you are subbed or not already to it. Currently i am working on a better way of doing it. Altough it is possible to subs to those manually later on, or opening in a new tab if you are quickly enough, this wont be a problem for the program.
 
 DISCLAIMER: Pido disculptas por las posibles faltas de ortografía en ambos idiomas, las prisas no son buen compañero. Intentaré arreglarlos en el futuro.
             You are going to excuse me from all the possible grammar errors, not only in english but in both languagues, that i hasve made during the writing of this little wiki. I will try to fix them in the future.
             
+DISCLAIMER: The code it is not perfect, and there is a case where if a channel with the exact same name appear in the search results it wont sub to it, this is due to the way in which the code decides if you are subbed or not already to it. Currently i am working on a better way of doing it. Altough it is possible to subs to those manually later on, or opening in a new tab if you are quickly enough, this wont be a problem for the program.
+
 ++++++++++++++++++++++++++++++++++PASOS EN ESPAÑOL:++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 0º Para hacer funcionar ambos códigos necesitas que en tu virtual envrioment tener los siguiente paquetes a instalar con pip:
@@ -71,7 +72,7 @@ Tras haberlo corrido, se genera un segundo archivo que yo he llamado Kanalliste_
                                 
 +++Kanalliste_nuevo.txt = this will be the updated version ready to be used. It should contain the same subs than the Kanalliste_nuevo_remaining.txt once it ran sussccesfully-
    
-   6º Once 75 subcriptions have been reached, you will need to wait for a couple of hours so that the "youtube subcribtions counter" has been reset, and allows you to continue subbing to whole a new batch of subcriptions. Since currently youtube limits the amount of daily subcriptions. After subbing the code will refresh the page so you can check if the subcription was successful.
+   6º Once 75 subcriptions have been reached, you will need to wait for a couple of hours so that the "youtube subcribtions counter" has been reset, and thus allows you to continue subbing to whole a new batch of subcriptions. Since currently youtube limits the amount of daily subcriptions. After subbing the code will refresh the page so you can check if the subcription was successful.
    
    7º You should check the Sub_failures.txt file to manually check and sub to those channels that the bot was not able to sub you to.
    
