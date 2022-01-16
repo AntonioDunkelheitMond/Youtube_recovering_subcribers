@@ -7,7 +7,8 @@ DISCLAIMER: The code it is not perfect, and there is a case where if a channel w
 
 DISCLAIMER: Pido disculptas por las posibles faltas de ortografía en ambos idiomas, las prisas no son buen compañero. Intentaré arreglarlos en el futuro.
             You are going to excuse me from all the possible grammar errors, not only in english but in both languagues, that i hasve made during the writing of this little wiki. I will try to fix them in the future.
-++++++++++++++++++++++++++++++++++PASOS:++++++++++++++++++++++++++++++++++++++++++++++++++++
+            
+++++++++++++++++++++++++++++++++++PASOS EN ESPAÑOL:++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 0º Para hacer funcionar ambos códigos necesitas que en tu virtual envrioment tener los siguiente paquetes a instalar con pip:
   pip install undetected-chromedriver
@@ -42,7 +43,7 @@ Tras haberlo corrido, se genera un segundo archivo que yo he llamado Kanalliste_
 
 
 
-+++++++++++++++++++++++++++++STEPS:+++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++STEPS IN ENGLISH:+++++++++++++++++++++++++++++++++++++++++++++
 
 0º Make sure you pip install the following packages installed: 
   pip install undetected-chromedriver
