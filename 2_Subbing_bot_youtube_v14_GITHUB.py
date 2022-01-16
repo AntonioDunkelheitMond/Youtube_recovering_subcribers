@@ -6,6 +6,7 @@ from selenium.webdriver.common.keys import Keys
 import undetected_chromedriver.v2 as uc
 import os
 #CREADO POR ANTONIO JUSTO
+#Para entender el funcionamiento leer el README en donde lo explico por ahora solo en inglés, aunque hay un popurri Español-Ingles-Aleman con el que yo mismo me fuerzo a # agilizar la mente y pesar unicamente en esos idiomas
 def login_you(mail, password):
     URL = "https://youtube.com"
     driver.get(URL)
@@ -66,6 +67,10 @@ with path_file_subs.open(mode="r", encoding="UTF-8") as file_subs_og:
             # an automatic line break at its position,
             # cosa que no ocurre con los otros dos idiomas que he añadido, por lo que tras trastear
             # las diferencias en el código en español permiten hacer funcionar tambien en Español
+            # No sé a que se puede deber la diferencia pero tras añadir copiar y pegar el espacio NBSP que se pbtiene tras ha
+            # hacer uso de page_source si encuentra con el elemento, aunque en lugar de tener 2 presentes en el codigo, aparecen
+            # de dos maneras distintas por lo que he tenido que alterar la condicón if siguiente. Esto es una forma burda de
+            # y facil de detectar si estamos subcritos
             search_name_sub_es = f"Anular suscripción a&nbsp;{user}"
             page = driver.page_source
 
@@ -90,7 +95,7 @@ with path_file_subs.open(mode="r", encoding="UTF-8") as file_subs_og:
                     continue
                 except Exception:
 
-                    print(f"IT WAS NOT POSSIBLE TO SUB TO:: {user}")
+                    print(f"IT WAS NOT POSSIBLE TO SUB TO: {user}")
 
                     content.pop(0)
                     with open("Sub_failures.txt", "a", encoding="UTF-8") as fa:
@@ -103,6 +108,7 @@ with path_file_subs.open(mode="r", encoding="UTF-8") as file_subs_og:
         print(len(content))
         file_subs_remaining.write("\n".join(content))
 
+#Lo almacenamos todo al finalizar el loop principal
 file1 = Path.cwd() / "Kanalliste_nuevo_old.txt"
 os.chdir(Path.cwd())
 if file1.exists():
